@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>布魯斯TailwindCSS教學</title>
+  </head>
+  <body class="bg-fb-bg">
+    <header class="w-full h-[56px] bg-fb-header fixed top-0 left-0 right-0"></header>
+
+    <main class="min-h-[100vh] pt-main-span flex">
+      <!-- 左側資訊欄 -->
+      <div class="hidden sticky top-main-span max-w-[360px] w-full h-full lg:block">
+        <p class="w-full bg-white">左側資訊欄</p>
+      </div>
+
+      <!-- 動態牆 -->
+      <div class="max-w-[744px] w-full mx-auto h-[200vh]">
+        <p class="w-full bg-white">動態牆</p>
+      </div>
+
+      <!-- 右側聯絡人 -->
+      <div class="hidden sticky top-main-span max-w-[360px] w-full h-full lg:block">
+        <p class="w-full bg-white">右側聯絡人</p>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

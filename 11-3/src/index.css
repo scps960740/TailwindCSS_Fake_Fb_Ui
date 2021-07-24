@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .popover-btn {
+    @apply w-[39px] h-[39px] p-2.5 ml-2 rounded-full bg-fb-popover flex justify-center items-center cursor-pointer active:bg-fb-active;
+  }
+
+  .popover-panel {
+    @apply w-[300px] p-4 bg-fb-header rounded-lg shadow-lg absolute right-0 top-12 border border-fb-input lg:w-[360px];
+  }
+
+  .story {
+    @apply flex-1 px-[4px] min-w-[120px] cursor-pointer;
+  }
+
+  .story-image {
+    @apply object-cover w-full h-full transition-transform duration-500 transform hover:scale-105;
+  }
+}
+
+/*  Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}
